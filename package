@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AD Project containing frontend and backend",
+  "scripts": {
+    "start-frontend": "cd Marham-hospital-website && npm start",
+    "build-frontend": "cd Marham-hospital-website && npm run build",
+    "start-backend": "cd backend && npm start",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
